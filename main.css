@@ -1,0 +1,45 @@
+p {
+  text-align: center;
+}
+
+img {
+  border: none
+}
+
+#container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+#nav {
+  list-style-type: none;
+  padding: 0
+}
+
+#nav li{
+  margin: 0;
+  padding: 0;
+}
+
+#nav a:link, #nav a:visited{
+  color: #ffffff;
+  background-color: purple;
+  font-weight: bold;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  font-family: Verdana, Arial, Sans-serif;
+  padding: 4px;
+}
+
+#nav a:hover, #nav a:active{
+  color:black;
+}
+
+h1 {
+  font-family: Verdana, Arial, serif;
+}
+
+p {
+  font-family: Georgia, Arial, serif;
+}
