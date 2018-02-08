@@ -1,6 +1,6 @@
 p {
 	color: purple;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: "Roboto", Helvetica, sans-serif;
 }
 
 .italic{
@@ -8,11 +8,12 @@ p {
 }
 
 h1 {
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: "Merriweather", serif;
 }
 
 body{
 	background-color: purple;
+  font-family: "PT Serif", serif;
 }
 
 
@@ -29,7 +30,7 @@ img {
   padding: 0
 }
 
-#nav li{
+#nav ul{
   list-style-type: none;
   margin: 0;
   padding: 0;
