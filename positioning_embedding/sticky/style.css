@@ -5,10 +5,12 @@
 }*/
 
 .box {
-  position: sticky;
   background-color: #ccc;
-  width: 200px;
-  top: 20px;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  margin-top: -10px;
+  padding-top: 10px;
 }
 
 img {
