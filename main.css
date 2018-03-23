@@ -2,6 +2,32 @@ img {
   border: none
 }
 
+.navigation{
+  list-style: none;
+  margin:0;
+  background: #1E34F0;
+  padding: 0;
+  display: flex;
+  flex-flow: column;
+}
+
+.navigation a {
+  text-decoration: none;
+  text-align: center
+  display: block;
+  color: white;
+  padding: 10px;
+  border-bottom: 1px solid black;
+}
+
+.navigation li:last-of-type a{
+  border-bottom: none;
+}
+
+.navigation a:hover{
+  background: black;
+}
+
 #container {
   width: 95%;
   margin: 0 auto;
@@ -19,7 +45,7 @@ img {
 
 #nav a:link, #nav a:visited{
   color: white;
-  background-color: blue;
+  background-color: #1E34F0;
   font-weight: bold;
   display: block;
   text-decoration: none;
@@ -43,6 +69,100 @@ p {
   }
 
   body{
-  	background-color: blue;
+    margin: 0;
+  	background-color: #1E34F0;
     font-family: "PT Serif", serif;
   }
+
+  .wrapper{
+    background: #1E34F0
+  }
+
+  .wrapper{
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+.navigation{
+  list-style: none;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-end;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation a {
+  border: none;
+}
+
+h1{
+display: block;
+width: 100%;
+order:1;
+}
+
+/* When greater than 800px wide */
+@media (min-width:800px) {
+
+
+
+  .navigation{
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+    padding: 0;
+    margin: 0;
+  }
+
+  .navigation a {
+    border: none;
+  }
+
+.navigation a:hover {
+  text-decoration: none;
+  background: black;
+  text-align: center;
+}
+
+  .navigation li:last-of-type a{
+    border-bottom: none;
+  }
+
+.wrapper{
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.image{
+  width:100%;
+padding-right: 10px;
+}
+
+.aside-1{
+  background: #B45200;
+}
+
+.aside-2{
+  background: #B45200;
+}
+
+article{
+  flex: 4 0px;
+  order: 2;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+}
+
+.aside-1{
+  order:1;
+}
+article{
+  order:2;
+}
+.aside-2{
+  order:3;
+}
+
+}
