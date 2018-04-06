@@ -1,5 +1,6 @@
 img {
   border: none
+  padding: 10px
 }
 
 .navigation{
@@ -105,8 +106,6 @@ order:1;
 /* When greater than 800px wide */
 @media (min-width:800px) {
 
-
-
   .navigation{
     display: flex;
     flex-flow: row;
@@ -147,6 +146,10 @@ padding-right: 10px;
   background: #B45200;
 }
 
+.lincolnquote{
+  background: purple;
+}
+
 article{
   flex: 4 0px;
   order: 2;
@@ -158,11 +161,61 @@ article{
 .aside-1{
   order:1;
 }
-article{
+
+.article{
   order:2;
 }
 .aside-2{
   order:3;
 }
 
+.lincolnquote{
+  order:4;
+}
+
+}
+
+@media screen and (min-width:1000px) {
+  article {
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr;
+    grid-gap: 20px;
+    grid-template-areas:
+        "a b b"
+        "c c e"
+        ". d d";
+  }
+
+  .image {
+    grid-area: a;
+    width: 100%;
+  }
+
+  .lincolnquote {
+    grid-area: e;
+  }
+
+  .article {
+    grid-area: b;
+  }
+
+  .section2 {
+    grid-area: c;
+  }
+
+  .section1 p:first-of-type, .section2 p:first-of-type {
+    margin-top: 0;
+  }
+
+}
+
+@media screen and (min-width:1200px) {
+  .article {
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr 1fr;
+    grid-gap: 20px;
+    grid-template-areas:
+        "a b"
+        "c d";
+  }
 }
